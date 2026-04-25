@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faelzinn390 - Jogos</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px 10px;
+            background: url('wpp.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+
+        h1, h2 {
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        }
+
+        h2 {
+            border-bottom: 2px solid #ff0000;
+            padding-bottom: 5px;
+            margin-top: 40px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Estilo do Card */
+        .card {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 350px; /* Tamanho ideal para celular e PC */
+            transition: 0.3s;
+            border: 1px solid transparent;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+            border: 1px solid #ff4d4d;
+            box-shadow: 0 0 15px rgba(255, 77, 77, 0.4);
+        }
+
+        /* Imagem da Capa */
+        .game-thumb {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* Informações ao lado da foto */
+        .card-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 15px;
+            flex-grow: 1;
+        }
+
+        .game-title {
+            margin: 0 0 10px 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+       /* Estilo do botão Voltar/Sair */
+.btn-voltar {
+    position: fixed; /* Fixa na tela */
+    top: 15px;
+    left: 15px;
+    z-index: 9999; /* Fica acima de tudo */
+}
+
+.btn-voltar img {
+    width: 60px; /* Ajuste o tamanho conforme sua imagem sair.png */
+    height: auto;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-voltar img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+/* Ajuste opcional para o título não bater na imagem no celular */
+h1 {
+    margin-top: 50px;
+}
+
+        /* Botão de Download (Imagem) */
+        .download-link img {
+            width: 110px; /* Tamanho da sua imagem de download */
+            height: auto;
+            transition: 0.2s;
+        }
+
+        .download-link img:hover {
+            filter: brightness(1.2);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Faelzinn390</h1>
+    
+    <h2>Jogos</h2>
+    <div class="container">
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="cover.png" class="game-thumb">
+            <div class="card-info">
+                <h3 class="game-title">Super Mario World</h3>
+                <a href="https://download2280.mediafire.com/j15j24sq1w9gWJJV8lwL5cdMmTHsQOaWurFzALVLUZBJCYEaqdI6bljDt9Euw2OcJdrP9QBotooK6NoxXpt9IJrmrag7cVBVPUqAsNwz2nayQW_NmZt-PVWfSbclj9EtZuqiwcxG1CrkYreqm4m5s3XZzz1Nx70UygJKPr7vRpgcTQ/611k7r8e5e0c7wj/Super_Mario_World_%28PT-BR%29_By+JymsNsl.pkg" class="download-link">
+                    <img src="images.png" alt="Download">
+                </a>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="SM64.jpg" class="game-thumb">
+            <div class="card-info">
+                <h3 class="game-title">Super Mario 64</h3>
+                <a href="https://download2284.mediafire.com/z12w0de12z5g3JjlH_QcHjFCLwLAs1VK1yWnz7ZDick9NqrwlYkPrY-30Splpkyz76hHoezYvD3l_Cn916DKTL7k8KSnBK00dmcC1eGanFjk4lTQLAl_ZT-O3wfIqWW3IUvvgi1bsFHTybA342m-O9oLSaiJQUFANl8Uc462uZxJEg/76vns4h11gnvbrk/Super_Mario_64-LUIS-GAMES.pkg" class="download-link">
+                    <img src="images.png" alt="Download">
+                </a>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="re4.jpg" class="game-thumb">
+            <div class="card-info">
+                <h3 class="game-title">Resident Evil 4 PS3</h3>
+                <a href="https://download2391.mediafire.com/080jpm2xsnugnUqwqZtWNKfZhNxmgH8NQIm93XtP2dAPU52ZyfDVPfAo8x1x-7yGNd-0msuQsY2H9QCDdOzqDQI-01PIpA3V3Y_grtioobKI-Jz_kr7ny3z0MF8LlVuw4QPlV7fAAF1wSNFMEr8dNWiKUyUCOlbdnjUgqaDC6fB-rA/vgm33jt0cn2pubw/Espacy+-+RE+4+HD+PS3.pkg" class="download-link">
+                    <img src="images.png" alt="Download">
+                </a>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+            <img src="undertaled.jpg" class="game-thumb">
+            <div class="card-info">
+                <h3 class="game-title">Undertale PS3</h3>
+                <a href="https://download2393.mediafire.com/cly9pla33gdgJL-TuFJIlVpwp3VS73Nnk8g-HRNhlm_ELIn5R15U3FIQlwPsnftdIbrO1M8EKYQrSBwiSIjeA5IyU5vNApL-ITTQue-r9oNCF8I_x_BzfQT8wjFbpYrEXqaKrPsJ7S6mW8ITUMV42rFnTogZTgoZsdqWdM2I8Zm22Q/lec0tbhvadbjq0z/Pedrost+-+Undertale+PS3.pkg" class="download-link">
+                    <img src="images.png" alt="Download">
+                </a>
+            </div>
+        </div>
+        <a href="index.html" class="btn-voltar">
+    <img src="sair.png" alt="Sair">
+</a>
+    </div> <!-- Fim container Homebrews --></body>
+</html>
