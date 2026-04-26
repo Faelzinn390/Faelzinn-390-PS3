@@ -29,6 +29,12 @@
             overflow: hidden; /* Evita barras de rolagem desnecessárias */
         }
 
+.barra-pesquisa {
+    background: rgba(0,0,0,0.7);
+    color: white;
+    border: 1px solid red;
+}
+
         h1, h2 {
             text-align: center;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
@@ -134,6 +140,9 @@ h1 {
 <body>
 
     <h1>Faelzinn390</h1>
+
+<input type="text" id="search" placeholder="🔍 Pesquisar..." onkeyup="filtrar()" class="barra-pesquisa">
+
     <div class="container">
         <div class="card">
             <img src="webman.png" class="game-thumb">
@@ -196,5 +205,16 @@ h1 {
     <a href="index.html" class="btn-voltar">
     <img src="sair.png" alt="Sair">
 </a>
+<script>
+function filtrar() {
+    let input = document.getElementById("search").value.toLowerCase();
+    let cards = document.querySelectorAll(".card");
+
+    cards.forEach(card => {
+        let titulo = card.querySelector(".game-title").innerText.toLowerCase();
+        card.style.display = titulo.includes(input) ? "flex" : "none";
+    });
+}
+</script>
     </div> <!-- Fim container Homebrews --></body>
 </html>
